@@ -3,7 +3,7 @@ PROJ_NAME=main
 
 #project paths
 CPP_PATH=./src
-HPP_PATH=./headers
+HPP_PATH=./include
 BUILD_PATH=./build
 
 # .cpp files
@@ -20,7 +20,7 @@ CC=g++
  
 # Flags for compiler
 CC_FLAGS=-c         \
-         -W         \
+         -std=c++11 \
          -Wall      \
          -g         \
          -I$(HPP_PATH)/
